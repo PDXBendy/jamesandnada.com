@@ -1,53 +1,45 @@
-// Parallax: move selected layers at different speeds based on scroll position.
-// Smooth and lightweight, no libraries.
-(function () {
-  const parallaxEls = Array.from(document.querySelectorAll(".parallax"));
+// Subtle parallax for background layers only.
+// Uses requestAnimationFrame for smoothness and respects reduced motion.
+(() => {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const layers = Array.from(document.querySelectorAll(".parallax"));
+  if (prefersReducedMotion || layers.length === 0) return;
 
-  if (!parallaxEls.length || prefersReducedMotion) return;
-
-  let lastY = 0;
   let ticking = false;
 
-  function update() {
+  const update = () => {
     ticking = false;
     const y = window.scrollY || 0;
 
-    // Only update if scroll changed meaningfully
-    if (Math.abs(y - lastY) < 1) return;
-    lastY = y;
-
-    for (const el of parallaxEls) {
-      const speed = Number(el.dataset.speed || 0.2);
-      // translateY in px. Lower speed means slower movement.
-      const offset = y * speed * -1;
-      el.style.transform = `translate3d(0, ${offset}px, 0)`;
+    for (const el of layers) {
+      const speed = Number(el.dataset.speed || 0.15);
+      el.style.transform = `translate3d(0, ${y * speed * -1}px, 0)`;
     }
-  }
+  };
 
   window.addEventListener("scroll", () => {
     if (!ticking) {
       ticking = true;
-      window.requestAnimationFrame(update);
+      requestAnimationFrame(update);
     }
   }, { passive: true });
 
   update();
 })();
 
-// Fade-in on scroll using IntersectionObserver
-(function () {
+// Fade-in on scroll
+(() => {
   const els = Array.from(document.querySelectorAll(".fade-in"));
-  if (!els.length) return;
+  if (els.length === 0) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+  const obs = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        e.target.classList.add("is-visible");
+        obs.unobserve(e.target);
       }
     }
   }, { threshold: 0.12 });
 
-  for (const el of els) observer.observe(el);
+  els.forEach(el => obs.observe(el));
 })();
