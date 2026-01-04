@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>James & Nada</title>
+
+  <!-- Fonts (free, elegant) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top nav -->
+  <header class="nav">
+    <div class="nav__inner">
+      <div class="brand">J & N</div>
+      <nav class="nav__links">
+        <a href="#details">Details</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#travel">Travel</a>
+        <a href="#rsvp" class="btn btn--small">RSVP</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO with parallax layers -->
+  <main>
+    <section class="hero">
+      <div class="hero__bg parallax" data-speed="0.25"></div>
+      <div class="hero__glow parallax" data-speed="0.45"></div>
+
+      <div class="hero__content">
+        <p class="kicker">We’re getting married</p>
+        <h1 class="title">James & Nada</h1>
+        <p class="subtitle">Saturday, May 23, 2026 • Provo, Utah</p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#details">See details</a>
+          <a class="btn btn--ghost" href="#rsvp">RSVP</a>
+        </div>
+
+        <div class="hero__meta fade-in">
+          <div class="meta-card">
+            <div class="meta-card__label">Ceremony</div>
+            <div class="meta-card__value">4:00 PM</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-card__label">Reception</div>
+            <div class="meta-card__value">6:00 PM</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-card__label">Venue</div>
+            <div class="meta-card__value">Venue Name</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details" class="section">
+      <div class="container">
+        <div class="section__header fade-in">
+          <h2>Details</h2>
+          <p>Everything you need, in one place.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card fade-in">
+            <h3>Date</h3>
+            <p>Saturday, May 23, 2026</p>
+          </div>
+          <div class="card fade-in">
+            <h3>Time</h3>
+            <p>Ceremony at 4:00 PM</p>
+            <p>Reception at 6:00 PM</p>
+          </div>
+          <div class="card fade-in">
+            <h3>Location</h3>
+            <p><strong>Venue Name</strong></p>
+            <p>123 Address Rd, Provo, UT</p>
+            <p><a class="link" href="https://maps.google.com" target="_blank" rel="noreferrer">Open in Google Maps</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARALLAX DIVIDER -->
+    <section class="divider">
+      <div class="divider__layer parallax" data-speed="0.18"></div>
+      <div class="divider__content">
+        <p class="divider__text fade-in">Lavender skies, golden light, and the best people.</p>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section section--alt">
+      <div class="container">
+        <div class="section__header fade-in">
+          <h2>Schedule</h2>
+          <p>Times may adjust slightly. Check back before the day.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item fade-in">
+            <div class="timeline__time">3:30 PM</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <h3>Guests arrive</h3>
+              <p>Please be seated by 3:55 PM.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item fade-in">
+            <div class="timeline__time">4:00 PM</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <h3>Ceremony</h3>
+              <p>Unplugged ceremony requested.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item fade-in">
+            <div class="timeline__time">5:00 PM</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <h3>Cocktail hour</h3>
+              <p>Light bites, photos, mingling.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item fade-in">
+            <div class="timeline__time">6:00 PM</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <h3>Reception</h3>
+              <p>Dinner, toasts, dancing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section id="travel" class="section">
+      <div class="container">
+        <div class="section__header fade-in">
+          <h2>Travel</h2>
+          <p>Recommendations for out-of-town guests.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card fade-in">
+            <h3>Parking</h3>
+            <p>Describe where guests should park and any validation.</p>
+          </div>
+          <div class="card fade-in">
+            <h3>Hotels</h3>
+            <p>Hotel 1, 5 minutes from venue</p>
+            <p>Hotel 2, 10 minutes from venue</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section section--alt">
+      <div class="container">
+        <div class="section__header fade-in">
+          <h2>RSVP</h2>
+          <p>Please RSVP by April 30, 2026.</p>
+        </div>
+
+        <div class="card card--center fade-in">
+          <p>Click below to RSVP.</p>
+          <a class="btn" href="https://forms.gle/" target="_blank" rel="noreferrer">Open RSVP Form</a>
+          <p class="small">If you have trouble, email: <a class="link" href="mailto:you@example.com">you@example.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="small">James & Nada • Thanks for celebrating with us</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
