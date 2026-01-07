@@ -377,3 +377,34 @@ a{ color: inherit; }
   .photo-panel{ height: 240px; }
   .timeline__item{ grid-template-columns: 86px 18px 1fr; }
 }
+
+.floral-frame{
+  position: relative;
+  width: min(720px, 92vw);
+  margin: 18px auto 26px;
+}
+
+.floral-frame img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.floral-frame__text{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+.floral-frame__text .hero__title{
+  margin: 0 0 6px;
+}
+
+.floral-frame__text .hero__date{
+  margin: 0;
+}
