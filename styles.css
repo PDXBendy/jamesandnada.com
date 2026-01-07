@@ -55,6 +55,9 @@ body{
   color: #111;
 
 body{
+  /* Kill the floating ambient clouds + vines */
+.ambient { display: none !important; }
+
   margin: 0;
   font-family: var(--body);
   color: #111;
