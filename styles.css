@@ -11,7 +11,22 @@
   --goldMid: #C8A04A;
   --goldLo: #8B6220;
 
-  --goldGrad: linear-gradient(135deg, var(--goldHi), var(--goldMid), var(--goldHi), var(--goldLo), var(--goldHi));
+/* Brushed gold: less shiny, more textured */
+--goldGrad:
+  linear-gradient(135deg,
+    #F3E2A5 0%,
+    #C9A24E 22%,
+    #EBD58E 48%,
+    #B6882F 72%,
+    #F3E2A5 100%
+  ),
+  repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.10) 0px,
+    rgba(255,255,255,0.10) 1px,
+    rgba(0,0,0,0.06) 2px,
+    rgba(0,0,0,0.06) 4px
+  );
   --lavGrad: radial-gradient(1200px 800px at 20% 10%, rgba(188,138,242,0.42), rgba(188,138,242,0.08), rgba(18,10,33,0) 60%);
 
   /* Image for hero frame */
