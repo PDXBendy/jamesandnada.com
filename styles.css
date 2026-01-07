@@ -37,16 +37,16 @@ html{ scroll-behavior: smooth; }
 body{
   margin: 0;
   font-family: var(--body);
-  color: rgba(255,255,255,0.92);
+  color: #111;
 
-  /* Not white, not bland */
-  background:
-    var(--lavGrad),
-    radial-gradient(1000px 700px at 80% 0%, rgba(200,160,74,0.18), rgba(18,10,33,0) 62%),
-    radial-gradient(1000px 700px at 20% 100%, rgba(200,160,74,0.15), rgba(18,10,33,0) 60%),
-    linear-gradient(180deg, var(--ink), var(--ink2));
+body{
+  margin: 0;
+  font-family: var(--body);
+  color: #111;
+  background: #ffffff;
   overflow-x: hidden;
 }
+
 
 /* Ambient art */
 .ambient{
@@ -103,9 +103,9 @@ body{
   align-items: center;
   justify-content: space-between;
 
-  background: linear-gradient(180deg, rgba(18,10,33,0.72), rgba(18,10,33,0.25));
+ background: rgba(255,255,255,0.85);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(188,138,242,0.22);
+border-bottom: 1px solid rgba(188,138,242,0.25);
 }
 .mark{
   display: inline-flex;
@@ -147,11 +147,11 @@ body{
   transition: color 200ms ease, background 200ms ease;
 }
 .nav__link:hover{
-  color: rgba(255,255,255,0.98);
+  color: #000;
   background: rgba(188,138,242,0.12);
 }
 .nav__link.is-active{
-  color: rgba(255,255,255,0.98);
+  color: #000;
 }
 .nav__rail{
   position: absolute;
@@ -707,7 +707,7 @@ body{
   transform: translateY(-1px);
 }
 .btn--ghost{
-  color: rgba(255,255,255,0.92);
+  color: #111;
   border: 1px solid rgba(188,138,242,0.35);
   background: rgba(18,10,33,0.25);
   backdrop-filter: blur(10px);
@@ -828,7 +828,7 @@ body{
   box-shadow: var(--shadowSoft);
   padding: 18px 18px 16px;
   text-decoration: none;
-  color: rgba(255,255,255,0.92);
+  color: #111;
   transition: transform 180ms ease, background 220ms ease, border 220ms ease;
 }
 .registryCard:hover{
