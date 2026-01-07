@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>James & Nada</title>
+  <meta name="description" content="Wedding website for James & Nada. Details, travel, RSVP, and registry." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Spunky elegant display + clean body -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Ambient art layers -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__glow ambient__glow--a" data-parallax="0.12"></div>
+    <div class="ambient__glow ambient__glow--b" data-parallax="0.18"></div>
+    <div class="ambient__glow ambient__glow--c" data-parallax="0.08"></div>
+
+    <svg class="ambient__vine ambient__vine--left" data-parallax="0.07" viewBox="0 0 240 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M170 10C120 120 60 160 90 240C120 320 210 330 180 430C150 530 40 540 70 650C100 760 210 770 170 890C130 1010 40 1010 30 1190"
+            stroke="url(#lav)" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+      <g opacity="0.85">
+        <path d="M110 210c-18 8-30 22-35 44" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M165 380c-18 8-30 22-35 44" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M120 640c-18 8-30 22-35 44" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M160 820c-18 8-30 22-35 44" stroke="url(#gold)" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <defs>
+        <linearGradient id="lav" x1="0" y1="0" x2="240" y2="1200" gradientUnits="userSpaceOnUse">
+          <stop stop-color="var(--lavender)" stop-opacity="0.9"/>
+          <stop offset="1" stop-color="var(--lavenderDeep)" stop-opacity="0.35"/>
+        </linearGradient>
+        <linearGradient id="gold" x1="0" y1="0" x2="240" y2="1200" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F8E7A6"/>
+          <stop offset="0.3" stop-color="#C8A04A"/>
+          <stop offset="0.55" stop-color="#FFF1BF"/>
+          <stop offset="0.85" stop-color="#A67C2D"/>
+          <stop offset="1" stop-color="#F6E3A1"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg class="ambient__vine ambient__vine--right" data-parallax="0.09" viewBox="0 0 260 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M80 20C140 120 220 160 180 260C140 360 40 370 70 470C100 570 220 590 190 710C160 830 40 840 70 980C100 1120 200 1120 230 1190"
+            stroke="url(#lav2)" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+      <g opacity="0.85">
+        <path d="M130 250c20 6 35 18 44 38" stroke="url(#gold2)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M95 520c20 6 35 18 44 38" stroke="url(#gold2)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M150 760c20 6 35 18 44 38" stroke="url(#gold2)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M105 980c20 6 35 18 44 38" stroke="url(#gold2)" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <defs>
+        <linearGradient id="lav2" x1="0" y1="0" x2="260" y2="1200" gradientUnits="userSpaceOnUse">
+          <stop stop-color="var(--lavender)" stop-opacity="0.85"/>
+          <stop offset="1" stop-color="var(--lavenderDeep)" stop-opacity="0.35"/>
+        </linearGradient>
+        <linearGradient id="gold2" x1="0" y1="0" x2="260" y2="1200" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F8E7A6"/>
+          <stop offset="0.3" stop-color="#C8A04A"/>
+          <stop offset="0.55" stop-color="#FFF1BF"/>
+          <stop offset="0.85" stop-color="#A67C2D"/>
+          <stop offset="1" stop-color="#F6E3A1"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- Nav -->
+  <header class="topbar" role="banner">
+    <a class="mark" href="#top" aria-label="Home">
+      <span class="mark__dot"></span>
+      <span class="mark__text">J · N</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav__link" href="#details">Details</a>
+      <a class="nav__link" href="#travel">Travel</a>
+      <a class="nav__link" href="#rsvp">RSVP</a>
+      <a class="nav__link" href="#registry">Registry</a>
+      <span class="nav__rail" aria-hidden="true"></span>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__inner">
+        <div class="hero__art" data-parallax="0.14" aria-hidden="true">
+          <div class="frame"></div>
+          <div class="frame__shine"></div>
+        </div>
+
+        <div class="hero__type" data-parallax="0.06">
+          <h1 class="names">
+            <span class="names__main">James <span class="amp">&amp;</span> Nada</span>
+          </h1>
+
+          <p class="hero__sub">
+            <span class="goldline"></span>
+            <span class="hero__subtext">A day worth dressing up for, and laughing through.</span>
+          </p>
+        </div>
+
+        <div class="hero__scroll">
+          <span class="hero__scrollLabel">Scroll</span>
+          <span class="hero__scrollIcon" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details" class="section section--details">
+      <div class="section__header">
+        <p class="kicker">Details</p>
+        <h2 class="title">When and where</h2>
+        <p class="lede">
+          Everything you need for the day. The essentials, with a little flair.
+        </p>
+      </div>
+
+      <div class="grid grid--details">
+        <article class="card card--date reveal">
+          <div class="card__decal" aria-hidden="true"></div>
+          <h3 class="card__title">Date and time</h3>
+          <p class="card__big">
+            <span class="gold">Saturday</span>, <span class="lav">May 17, 2026</span>
+          </p>
+          <p class="card__meta">Ceremony at 4:30 PM · Reception to follow</p>
+          <p class="card__note">Update these lines with your exact schedule.</p>
+        </article>
+
+        <article class="card card--note reveal">
+          <h3 class="card__title">Attire</h3>
+          <p class="card__meta">
+            Dressy, comfortable, and camera-ready. Think bold, clean, and celebratory.
+          </p>
+          <p class="card__note">Optional: add a dress code note here.</p>
+        </article>
+      </div>
+
+      <div class="photos reveal">
+        <div class="photos__head">
+          <h3 class="photos__title">Engagement photos</h3>
+          <p class="photos__sub">Drop yours in the assets folder and replace the file names.</p>
+        </div>
+
+        <div class="photos__grid">
+          <figure class="photo">
+            <img src="assets/engagement-1.jpg" alt="Engagement photo 1" onerror="this.closest('.photo').classList.add('photo--empty'); this.remove();" />
+            <figcaption class="photo__cap">Photo 1</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="assets/engagement-2.jpg" alt="Engagement photo 2" onerror="this.closest('.photo').classList.add('photo--empty'); this.remove();" />
+            <figcaption class="photo__cap">Photo 2</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="assets/engagement-3.jpg" alt="Engagement photo 3" onerror="this.closest('.photo').classList.add('photo--empty'); this.remove();" />
+            <figcaption class="photo__cap">Photo 3</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="assets/engagement-4.jpg" alt="Engagement photo 4" onerror="this.closest('.photo').classList.add('photo--empty'); this.remove();" />
+            <figcaption class="photo__cap">Photo 4</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="twoUp reveal">
+        <article class="panel panel--venue">
+          <div class="panel__orn" aria-hidden="true"></div>
+          <h3 class="panel__title">Venue details</h3>
+          <p class="panel__line"><span class="label">Venue</span> <span class="value">The Venue Name</span></p>
+          <p class="panel__line"><span class="label">Address</span> <span class="value">1234 Address Rd, City, State</span></p>
+          <p class="panel__line"><span class="label">Notes</span> <span class="value">Arrive 20 minutes early for seating.</span></p>
+
+          <div class="panel__mini">
+            <span class="chip">Outdoor</span>
+            <span class="chip">Golden hour</span>
+            <span class="chip">Good shoes</span>
+          </div>
+        </article>
+
+        <article class="panel panel--map">
+          <h3 class="panel__title">Map</h3>
+          <div class="mapBox" role="img" aria-label="Map placeholder">
+            <div class="mapBox__inner">
+              <p class="mapBox__text">Paste a Google Maps embed here</p>
+              <p class="mapBox__hint">Replace this box with an iframe in index.html</p>
+            </div>
+          </div>
+
+          <p class="panel__note">
+            If you want, I can format your exact Google Maps iframe so it looks like part of the design.
+          </p>
+        </article>
+      </div>
+
+      <div class="parking reveal">
+        <div class="parking__left">
+          <h3 class="parking__title">Parking</h3>
+          <p class="parking__text">
+            Give a clear instruction that avoids confusion. Example: “Use the north lot, then follow the lavender signage.”
+          </p>
+          <ul class="fancyList">
+            <li>Primary lot: <span class="gold">North Entrance</span></li>
+            <li>Overflow: <span class="lav">Street parking</span> nearby</li>
+            <li>Accessibility: ask an usher for assistance</li>
+          </ul>
+        </div>
+
+        <div class="parking__right">
+          <h3 class="parking__title">Accommodations</h3>
+          <p class="parking__text">
+            Add your preferred hotels, discount codes, or a short list of nearby options.
+          </p>
+          <div class="hotelCards">
+            <div class="hotelCard">
+              <p class="hotelCard__name">Hotel Option One</p>
+              <p class="hotelCard__meta">10 min away · Good value</p>
+            </div>
+            <div class="hotelCard">
+              <p class="hotelCard__name">Hotel Option Two</p>
+              <p class="hotelCard__meta">Walkable · Boutique</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ctaRow reveal">
+        <a class="btn btn--primary" href="#rsvp">RSVP</a>
+        <a class="btn btn--ghost" href="#registry">Registry</a>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section id="travel" class="section section--travel">
+      <div class="section__header section__header--alt">
+        <p class="kicker">Travel</p>
+        <h2 class="title">Getting here</h2>
+        <p class="lede">
+          Flights, drive notes, and the small stuff that makes arrival easy.
+        </p>
+      </div>
+
+      <div class="travelGrid">
+        <article class="travelCard reveal">
+          <h3 class="travelCard__title">Airports</h3>
+          <p class="travelCard__text">
+            Add the closest airport(s) and typical drive times.
+          </p>
+          <ul class="fancyList fancyList--tight">
+            <li>Nearest: <span class="lav">XYZ International</span> · 35 min</li>
+            <li>Alternate: <span class="gold">ABC Regional</span> · 1 hr 10 min</li>
+          </ul>
+        </article>
+
+        <article class="travelCard reveal">
+          <h3 class="travelCard__title">Rides and parking</h3>
+          <p class="travelCard__text">
+            Mention rideshare pickup locations or anything guests commonly miss.
+          </p>
+          <p class="travelCard__callout">
+            Tip: If you do signage, do it in lavender with a gold accent. It will tie into the site.
+          </p>
+        </article>
+
+        <article class="travelCard reveal">
+          <h3 class="travelCard__title">Weekend ideas</h3>
+          <p class="travelCard__text">
+            Add 3 or 4 favorite spots. Keep it short and curated.
+          </p>
+          <div class="pills">
+            <span class="pill">Coffee</span>
+            <span class="pill">Scenic walk</span>
+            <span class="pill">Dinner</span>
+            <span class="pill">Dessert</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section section--rsvp">
+      <div class="section__header">
+        <p class="kicker">RSVP</p>
+        <h2 class="title">Let us know you’re coming</h2>
+        <p class="lede">
+          Quick form, then you’re done. We cannot wait to celebrate with you.
+        </p>
+      </div>
+
+      <div class="formBlock reveal">
+        <div class="formBlock__art" aria-hidden="true"></div>
+        <div class="formBlock__content">
+          <h3 class="formBlock__title">RSVP form</h3>
+          <p class="formBlock__text">
+            Replace the link below with your Google Form URL.
+          </p>
+
+          <a class="btn btn--primary btn--wide" href="https://docs.google.com/forms/" target="_blank" rel="noreferrer">
+            Open RSVP Google Form
+          </a>
+
+          <p class="formBlock__note">
+            If you prefer embedding the form directly on the page, tell me and I’ll style the iframe so it feels seamless.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRY -->
+    <section id="registry" class="section section--registry">
+      <div class="section__header section__header--alt">
+        <p class="kicker">Registry</p>
+        <h2 class="title">Gifts, but make it simple</h2>
+        <p class="lede">
+          Whatever you choose means a lot. Here are the links.
+        </p>
+      </div>
+
+      <div class="registryGrid reveal">
+        <a class="registryCard" href="https://example.com" target="_blank" rel="noreferrer">
+          <div class="registryCard__top">
+            <span class="registryCard__badge">Registry</span>
+            <span class="registryCard__icon" aria-hidden="true">✦</span>
+          </div>
+          <h3 class="registryCard__title">Main registry link</h3>
+          <p class="registryCard__text">Link to your registry site (Zola, Amazon, etc.).</p>
+        </a>
+
+        <a class="registryCard" href="https://docs.google.com/forms/" target="_blank" rel="noreferrer">
+          <div class="registryCard__top">
+            <span class="registryCard__badge">Form</span>
+            <span class="registryCard__icon" aria-hidden="true">✶</span>
+          </div>
+          <h3 class="registryCard__title">Registry form</h3>
+          <p class="registryCard__text">If you’re collecting addresses, preferences, or contributions.</p>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__rule" aria-hidden="true"></div>
+        <p class="footer__text">James · Nada</p>
+        <p class="footer__small">Made with lavender, gold, and intention.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
