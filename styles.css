@@ -508,10 +508,14 @@ border-bottom: 1px solid rgba(188,138,242,0.25);
 .twoUp{
   width: min(var(--max), calc(100% - (var(--pad) * 2)));
   margin: 34px auto 0;
+  grid-template-columns: 1fr;
+  justify-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 18px;
   align-items: start;
+}
+.twoUp--center .panel--venue{
+  width: min(760px, 100%);
 }
 .panel{
   position: relative;
