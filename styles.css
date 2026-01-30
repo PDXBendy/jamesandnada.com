@@ -92,8 +92,9 @@ border-bottom: 1px solid rgba(188,138,242,0.25);
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: rgba(255,255,255,0.9);
+  color: rgba(17,17,17,0.92);
 }
+
 .mark__dot{
   width: 10px;
   height: 10px;
@@ -118,7 +119,7 @@ border-bottom: 1px solid rgba(188,138,242,0.25);
 .nav__link{
   position: relative;
   text-decoration: none;
-  color: rgba(255,255,255,0.84);
+  color: rgba(17,17,17,0.75);
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -126,6 +127,7 @@ border-bottom: 1px solid rgba(188,138,242,0.25);
   border-radius: 999px;
   transition: color 200ms ease, background 200ms ease;
 }
+
 .nav__link:hover{
   color: #000;
   background: rgba(188,138,242,0.12);
