@@ -33,7 +33,7 @@
   }
 
   function setupObservers() {
-    const sectionIds = ["details", "travel", "rsvp", "registry"];
+    const sectionIds = ["details", "rsvp", "registry"];
     const sections = sectionIds
       .map(id => document.getElementById(id))
       .filter(Boolean);
@@ -87,7 +87,7 @@
   function onResizeInitRail() {
     // Set a default active based on scroll position
     const fallback = "details";
-    const candidates = ["registry", "rsvp", "travel", "details"];
+    const candidates = ["registry", "rsvp", "details"];
     const active = candidates.find(id => {
       const el = document.getElementById(id);
       if (!el) return false;
