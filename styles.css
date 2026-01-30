@@ -49,10 +49,14 @@
 
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
+
 body{
   margin: 0;
   font-family: var(--body);
   color: #111;
+  background: #ffffff;
+  overflow-x: hidden;
+}
 
 body{
   /* Kill the floating ambient clouds + vines */
@@ -202,10 +206,14 @@ border-bottom: 1px solid rgba(188,138,242,0.25);
 }
 .names__main{
   display: inline-block;
+  line-height: 1.06;
+  padding-top: 0.04em;
   position: relative;
 }
 .amp{
   display: inline-block;
+  line-height: 1.11;
+  padding-top: 0.02em;
   font-weight: 600;
   font-style: italic;
   padding: 0 10px;
@@ -368,6 +376,8 @@ border-bottom: 1px solid rgba(188,138,242,0.25);
   letter-spacing: 0.02em;
 }
 .card__big{
+  line-height: 1.15;
+  padding-top: 0.02em;
   margin: 0;
   font-family: var(--display);
   font-weight: 800;
