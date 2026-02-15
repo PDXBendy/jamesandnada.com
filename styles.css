@@ -167,24 +167,16 @@ border-bottom: 1px solid rgba(188,138,242,0.25);
 }
 .frame{
   width: 100%;
-  aspect-ratio: 1 / 1;
-  background-image: var(--frame-url);
-  background-repeat: no-repeat;
+  aspect-ratio: 4 / 5;  /* tall elegant portrait */
+  background-image: url("assets/engagement-1.jpg");
+  background-size: cover;
   background-position: center;
-  background-size: contain;
-  filter: drop-shadow(0 30px 70px rgba(0,0,0,0.35));
+  border-radius: 36px;
+  box-shadow: 0 40px 90px rgba(0,0,0,0.18);
 }
-.frame__shine{
-  position: absolute;
-  inset: 10% 12%;
-  border-radius: 999px;
-  background:
-    radial-gradient(closest-side at 25% 20%, rgba(255,241,191,0.38), rgba(255,241,191,0.0) 55%),
-    radial-gradient(closest-side at 78% 72%, rgba(188,138,242,0.28), rgba(188,138,242,0.0) 60%);
-  mix-blend-mode: screen;
-  opacity: 0.85;
-  pointer-events: none;
+
 }
+
 
 .hero__type{
   position: relative;
